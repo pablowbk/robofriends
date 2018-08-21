@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One|Open+Sans|Monoton');
+
+.title {
+  font-family: 'Monoton';
+  font-size: 4em;
+  font-weight: lighter;
+  color: #1ba882;
+  text-shadow: 0px 0px 50px white;
+};
+
+.texted {
+  color: #1ba882;
+}
+
+.input {
+  padding: 15px 30px;
+  margin-bottom: 25px;
+  border: none;
+  color: white;
+  font-size: 1.4em;
+  background-color: transparent;
+  text-align: center;
+  box-shadow: 0px 0px 100px -20px rgba(255, 255, 255, 1);
+  font-family: 'Open Sans';
+}
+
+.input:focus {
+    outline: 2px solid #febd4e;
+    outline-offset:  px;
+    -moz-outline-radius: 0px;
+    background-color: hsla(23, 54%, 73%, 0.48);
+}
+
+/* tachyons / tc bg-white-50 dib br4 pa3 ma2 grow bw2 shadow-5 */
+.cards {
+  display: inline-block;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.47);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  /*mimicks tachyons grow effect*/
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  /*mimicks tachyons shadow-4 effect*/
+  box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 );
+}
+
+.cards:hover,
+.cards:focus {
+  transform: scale(1.05);
+}
+
+
+.loading {
+
+  font-family: "Open Sans";
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  letter-spacing: 15px;
+  animation-name: flash;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+
+/*
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+*/
+
+@keyframes pulse {
+  0% { transform: scale(1.0); }
+  50% { transform: scale(1.1);}
+  100% { transform: scale(1.0); }
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
