@@ -1,7 +1,7 @@
 import React from 'react';
 import '../containers/App.css'
 
-const SeachBox = ({ searchfield, searchChange }) => {
+const SearchBox = ({ searchfield, searchChange }) => {
   return (
     <div className="pa2">
       <input
@@ -16,4 +16,4 @@ const SeachBox = ({ searchfield, searchChange }) => {
 }
 
 
-export default SeachBox
+export default SearchBox

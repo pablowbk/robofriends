@@ -4,7 +4,6 @@ import SearchBox from '../components/SearchBox.js'
 import './App.css'
 import Scroll from '../components/Scroll.js'
 
-
 class App extends Component {
   constructor() {
     super()
@@ -44,8 +43,6 @@ class App extends Component {
       );
     }
   }
-
 }
-
 
 export default App;
