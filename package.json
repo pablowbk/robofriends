@@ -20,7 +20,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://pablowbk.github.io/react-demo/",
+  "homepage": "https://pablowbk.github.io/robofriends/",
   "devDependencies": {
     "gh-pages": "^1.2.0"
   },
