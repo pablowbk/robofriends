@@ -3,7 +3,7 @@ import '../containers/App.css'
 
 const SearchBox = ({ searchfield, searchChange }) => {
   return (
-    <div className="pa2">
+    <div className="">
       <input
         className="input"
         type="search"
