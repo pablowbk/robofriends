@@ -45,7 +45,7 @@ class App extends Component {
     return isPending ? <div className="loading">loading</div>
     : (
       <div className="tc">
-        <h1 className="title">RoboFriends</h1>
+        <h1 className="title">RoboSearch</h1>
         <SearchBox searchChange={ onSearchChange }/>
         <Scroll>
           <CardList robots = { filteredRobots }/>
